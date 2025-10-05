@@ -20,7 +20,7 @@ export default function HomePage() {
           className="absolute top-32 right-12 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 flex items-center gap-3 hover:border-white/20 transition-all group cursor-pointer"
         >
           <div className="flex items-center gap-2">
-            <div className="text-xl font-bold">x</div>
+            <div className="text-xl font-bold font-museo">x</div>
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-red-400 via-pink-400 to-pink-500 shadow-lg shadow-pink-500/30"></div>
           </div>
           <div>
@@ -32,7 +32,7 @@ export default function HomePage() {
 
         {/* Main content */}
         <div className="relative z-10 text-center max-w-5xl">
-          <h1 className="text-7xl font-bold mb-8 leading-tight">
+          <h1 className="text-7xl text-gray-400 font-bold mb-8 leading-tight font-museo">
             Currently, helping people{' '}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">

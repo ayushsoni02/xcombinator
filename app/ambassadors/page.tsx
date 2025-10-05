@@ -17,7 +17,7 @@ export default function AmbassadorsPage() {
     handle: "@JardasPrs",
     role: "xAmbassador",
     tags: ["Advisor", "Blockchain expert"],
-    avatar: "/ambassador-avatar.png", // You'll need to add actual images
+    avatar: "/avator_img.png", // You'll need to add actual images
   });
 
   return (
@@ -26,9 +26,12 @@ export default function AmbassadorsPage() {
         {/* Header */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
-            <Users className="w-8 h-8 text-gray-400" />
-            <h1 className="text-5xl font-bold">
-              xCombinator <span className="text-white">Ambassadors</span>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.6667 28.3333H15.625C14.9861 28.3333 14.4653 28.5278 14.0625 28.9167C13.6597 29.3056 13.4167 29.75 13.3333 30.25C13.25 30.75 13.3264 31.2361 13.5625 31.7083C13.7986 32.1806 14.2222 32.5278 14.8333 32.75L24.375 36.5417C24.6528 36.6528 24.9236 36.6875 25.1875 36.6458C25.4514 36.6042 25.6944 36.5139 25.9167 36.375C26.1389 36.2361 26.3194 36.0486 26.4583 35.8125C26.5972 35.5764 26.6667 35.3056 26.6667 35V28.3333ZM16.6667 3.33333C18.5 3.33333 20.0694 3.98611 21.375 5.29166C22.6806 6.59722 23.3333 8.16666 23.3333 10C23.3333 11.8333 22.6806 13.4028 21.375 14.7083C20.0694 16.0139 18.5 16.6667 16.6667 16.6667C14.8333 16.6667 13.2639 16.0139 11.9583 14.7083C10.6528 13.4028 10 11.8333 10 10C10 8.16666 10.6528 6.59722 11.9583 5.29166C13.2639 3.98611 14.8333 3.33333 16.6667 3.33333ZM32.0417 18.3333C32.8472 18.3333 33.5417 18.6042 34.125 19.1458C34.7083 19.6875 35 20.3611 35 21.1667C35 21.8056 34.8194 22.3889 34.4583 22.9167C34.0972 23.4444 33.6111 23.8194 33 24.0417L30 25H15.625C14.0417 25 12.7083 25.5417 11.625 26.625C10.5417 27.7083 10 29.0417 10 30.625C10 31.125 10.0694 31.6042 10.2083 32.0625C10.3472 32.5208 10.5278 32.9444 10.75 33.3333H5V26.6667C5 24.3611 5.8125 22.3958 7.4375 20.7708C9.0625 19.1458 11.0278 18.3333 13.3333 18.3333H32.0417Z" fill="#9095A4"/>
+</svg>
+
+            <h1 className="text-5xl text-gray-400">
+              <span className="font-museo">xCombinator</span> <span className="text-gray-300 font-bold font-museo">Ambassadors</span>
             </h1>
           </div>
           <p className="text-gray-400 text-lg">
@@ -49,29 +52,29 @@ export default function AmbassadorsPage() {
               {/* Card */}
               <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all h-full">
                 {/* Badge */}
-                <div className="inline-block px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-gray-300 mb-4">
+                <div className="inline-block px-3 py-1 font-museo rounded-full text-xm text-gray-300 mb-4">
                   xAmbassador
                 </div>
 
                 {/* Avatar & Info */}
                 <div className="flex items-center gap-4 mb-4">
-                  {/* Avatar - Using gradient placeholder since we don't have actual images */}
-                  <div className="relative">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-400 via-red-400 to-pink-500 flex items-center justify-center">
-                      {/* Robot/Character placeholder */}
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                        <div className="w-3 h-3 rounded-full bg-white"></div>
-                      </div>
-                    </div>
-                    {/* Decorative elements */}
-                    <div className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-yellow-400"></div>
-                    <div className="absolute -bottom-1 -left-1 w-3 h-3 rounded-full bg-orange-400"></div>
-                  </div>
 
-                  <div className="flex-1">
+                <div className="flex-1 mt-10">
                     <h3 className="text-xl font-bold mb-1">{ambassador.name}</h3>
                     <p className="text-sm text-gray-400">{ambassador.handle}</p>
                   </div>
+
+                  {/* Avatar */}
+                  <div className="relative">
+                    <img 
+                      src={ambassador.avatar} 
+                      alt={ambassador.name}
+                      className="w-32 h-32 rounded-full object-cover border-2 border-white/10"
+                    />
+                   
+                  </div>
+
+                  
                 </div>
 
                 {/* Tags */}
@@ -79,7 +82,7 @@ export default function AmbassadorsPage() {
                   {ambassador.tags.map((tag: string, tagIndex: number) => (
                     <span
                       key={tagIndex}
-                      className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-gray-300"
+                      className="px-3 py-1 bg-white/5  border-white/10 rounded-full text-xs text-gray-300"
                     >
                       {tag}
                     </span>

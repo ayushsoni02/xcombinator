@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        'museo': ['var(--font-museo-moderno)'],
+      },
       colors: {
         background: "#000000",
         foreground: "#ffffff",

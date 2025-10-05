@@ -15,7 +15,7 @@ export default function SXTokenPage() {
             {/* Token Info Header */}
             <div>
               <div className="text-sm text-gray-400 mb-2">
-                $X Token, <span className="text-white">The Backbone of xCombinator</span>
+                $X Token, <span className="text-white">The Backbone of <span className="font-museo">xCombinator</span></span>
               </div>
               <div className="flex items-center gap-3 mt-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
@@ -35,7 +35,7 @@ export default function SXTokenPage() {
             {/* Value Proposition */}
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
               <h2 className="text-3xl font-bold mb-4">
-                With <span className="text-white">every new project</span>, the xCombinator ecosystem strengthens, and so does the value of $X
+                With <span className="text-white">every new project</span>, the <span className="font-museo">xCombinator</span> ecosystem strengthens, and so does the value of $X
               </h2>
             </div>
 
@@ -88,8 +88,8 @@ export default function SXTokenPage() {
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500"></div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-sm font-medium">xCombinator</span>
-                      <span className="text-xs text-gray-500">@xCombinator · 2h</span>
+                      <span className="text-sm font-medium font-museo">xCombinator</span>
+                      <span className="text-xs text-gray-500">@<span className="font-museo">xCombinator</span> · 2h</span>
                     </div>
                     <div className="text-sm text-gray-300 mb-3">
                       🔥 Latest buyback: 1.6M $X tokens
@@ -115,7 +115,7 @@ export default function SXTokenPage() {
                 <span className="text-white">$X</span> powers
               </h2>
               <h3 className="text-4xl font-bold text-gray-400 mb-4">
-                the xCombinator ecosystem
+                the <span className="font-museo">xCombinator</span> ecosystem
               </h3>
               <p className="text-gray-400 text-lg">
                 $X isn't just a token—it's ownership in the next era of Solana products
@@ -169,7 +169,7 @@ export default function SXTokenPage() {
             {/* Deflationary Mechanism */}
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
               <h3 className="text-2xl font-bold mb-4">
-                xCombinator ensures a <span className="text-white">deflationary supply mechanism</span> through constant buybacks
+                <span className="font-museo">xCombinator</span> ensures a <span className="text-white">deflationary supply mechanism</span> through constant buybacks
               </h3>
             </div>
           </div>
