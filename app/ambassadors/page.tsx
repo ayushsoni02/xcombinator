@@ -1,6 +1,6 @@
 "use client";
 
-import { Users } from "lucide-react";
+import { Twitter } from "lucide-react";
 
 interface Ambassador {
   name: string;
@@ -11,19 +11,19 @@ interface Ambassador {
 }
 
 export default function AmbassadorsPage() {
-  // Sample ambassador data - replace with actual data
+  
   const ambassadors: Ambassador[] = Array(6).fill({
     name: "cynthontheblock",
     handle: "@JardasPrs",
     role: "xAmbassador",
     tags: ["Advisor", "Blockchain expert"],
-    avatar: "/avator_img.png", // You'll need to add actual images
+    avatar: "/avator_img.png", 
   });
 
   return (
     <div className="min-h-screen pt-32 px-6 pb-20">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
+        
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,24 +39,24 @@ export default function AmbassadorsPage() {
           </p>
         </div>
 
-        {/* Ambassadors Grid */}
+        
         <div className="grid grid-cols-3 gap-6">
           {ambassadors.map((ambassador, index) => (
             <div
               key={index}
               className="relative group"
             >
-              {/* Hover glow effect */}
+             
               <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-orange-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              {/* Card */}
+          
               <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all h-full">
-                {/* Badge */}
+                
                 <div className="inline-block px-3 py-1 font-museo rounded-full text-xm text-gray-300 mb-4">
                   xAmbassador
                 </div>
 
-                {/* Avatar & Info */}
+                
                 <div className="flex items-center gap-4 mb-4">
 
                   <div className="flex-1 mt-10">
@@ -64,8 +64,9 @@ export default function AmbassadorsPage() {
                     <p className="text-sm text-gray-400">{ambassador.handle}</p>
                   </div>
 
-                  {/* Avatar */}
+              
                   <div className="relative">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={ambassador.avatar}
                       alt={ambassador.name}
@@ -77,7 +78,7 @@ export default function AmbassadorsPage() {
 
                 </div>
 
-                {/* Tags */}
+             
                 <div className="flex flex-wrap gap-2">
                   {ambassador.tags.map((tag: string, tagIndex: number) => (
                     <span
@@ -93,7 +94,7 @@ export default function AmbassadorsPage() {
           ))}
         </div>
 
-        {/* Become Ambassador CTA */}
+       
         <div className="mt-12 text-center">
           <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 inline-block">
             <h3 className="text-2xl font-bold mb-3">Become an xAmbassador</h3>

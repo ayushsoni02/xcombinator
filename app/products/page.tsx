@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, Twitter, Send, Globe, Hammer } from "lucide-react";
+import { ArrowUpRight, Twitter, Send, Globe } from "lucide-react";
 
 export default function ProductsPage() {
   return (

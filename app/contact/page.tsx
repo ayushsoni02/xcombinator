@@ -6,11 +6,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen pt-32 px-6 pb-20">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
+        
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-4">Get <span className="font-museo">in Touch</span></h1>
           <p className="text-gray-400 text-lg font-museo">
-            Ready to launch on Solana? Let's talk about your project
+            Ready to launch on Solana? Let&apos;s talk about your project
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function ContactPage() {
         <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-12 text-center">
           <h2 className="text-3xl font-bold mb-4 font-museo">Ready to Launch?</h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Whether you're planning a token launch, building a dApp, or need guidance on Solana development, our team is here to help you succeed.
+            Whether you&apos;re planning a token launch, building a dApp, or need guidance on Solana development, our team is here to help you succeed.
           </p>
           <button className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all font-medium text-lg">
             Schedule a Call
