@@ -7,18 +7,18 @@ export default function SXTokenPage() {
   const [marketCap] = useState("7,789,567.45");
 
   return (
-    <div className="min-h-screen pt-20 px-6">
-      <div className="max-w-7xl mx-auto py-16">
-        <div className="grid grid-cols-2 gap-12">
+    <div className="min-h-screen pt-20 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto py-8 sm:py-12 md:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           {/* Left Column */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {/* Token Info Header */}
             <div>
-              <div className="p-2 text-sm text-gray-400 mb-2 rounded-full object-cover border-2 border-white/10 bg-white/5 w-[300px]">
+              <div className="p-2 text-xs sm:text-sm text-gray-400 mb-2 rounded-full object-cover border-2 border-white/10 bg-white/5 w-full max-w-[300px]">
                 $X Token, <span className="text-gray-400">The Backbone of <span className="font-museo">xCombinator</span></span>
               </div>
               <div className="mt-4">
-                <div className="flex justify-end items-center gap-3 mb-4 mt-16">
+                <div className="flex justify-end items-center gap-2 sm:gap-3 mb-4 mt-8 sm:mt-16">
                   <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                     <rect width="26" height="26" rx="13" fill="url(#pattern0_15_156)" />
                     <defs>
@@ -55,7 +55,7 @@ export default function SXTokenPage() {
                   </svg>
                 </div>
 
-                <div className="text-sm text-gray-400 ml-32 mb-16">
+                <div className="text-xs sm:text-sm text-gray-400 ml-0 sm:ml-32 mb-8 sm:mb-16">
                   <span className="text-white font-medium">$X</span> was launched on{" "}
                   <span className="text-white font-medium">DAOs.fun</span> as an{" "}
                   <span className="text-white font-medium">SPL-22</span> token on the{" "}
@@ -65,26 +65,26 @@ export default function SXTokenPage() {
             </div>
 
             {/* Value Proposition */}
-            <div className="bg-gradient-to-br from-white/5 to-white/5 backdrop-blur-md  border-white/10 rounded-2xl p-8">
-              <h2 className="text-3xl font-bold mb-4 font-museo text-gray-400">
+            <div className="bg-gradient-to-br from-white/5 to-white/5 backdrop-blur-md  border-white/10 rounded-2xl p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 font-museo text-gray-400">
                 With <span className="text-white">every new project</span>, the <span className="font-museo">xCombinator</span> ecosystem strengthens, and so does the value of $X
               </h2>
             </div>
 
             {/* Market Cap Section */}
-            <div className="space-y-4 bg-gradient-to-br from-white/10 to-white/5 p-4 rounded-2xl">
-              <div className="flex items-baseline gap-3">
-                <h3 className="text-xl text-gray-400">$X Marketcap</h3>
+            <div className="space-y-4 bg-gradient-to-br from-white/10 to-white/5 p-4 sm:p-6 rounded-2xl">
+              <div className="flex items-baseline gap-2 sm:gap-3">
+                <h3 className="text-lg sm:text-xl text-gray-400">$X Marketcap</h3>
               </div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-5xl font-bold">${marketCap}</span>
+              <div className="flex flex-wrap items-baseline gap-2">
+                <span className="text-3xl sm:text-4xl md:text-5xl font-bold">${marketCap}</span>
                 <span className="px-3 py-1 bg-green-500/10 text-green-400 rounded-full text-sm border border-green-500/20">
                   active
                 </span>
               </div>
 
               {/* Supply Info */}
-              <div className="grid grid-cols-2 gap-4 mt-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                 <div>
                   <div className="text-sm text-gray-500 mb-1">Total supply</div>
                   <div className="text-lg font-semibold">• 1.1 Billion</div>
@@ -97,7 +97,7 @@ export default function SXTokenPage() {
             </div>
 
             {/* Tokenomics Details */}
-            <div className="space-y-3 text-sm">
+            <div className="space-y-3 text-xs sm:text-sm">
               <div className="flex items-start gap-2">
                 <span className="text-gray-500">•Buyback</span>
                 <span className="text-white font-medium">1.6M $X tokens</span>
@@ -115,7 +115,7 @@ export default function SXTokenPage() {
               </div>
 
               {/* Embedded Tweet Preview */}
-              <div className="mt-6 bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 rounded-xl p-4">
+              <div className="mt-6 bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 rounded-xl p-3 sm:p-4">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500"></div>
                   <div className="flex-1">
@@ -140,26 +140,26 @@ export default function SXTokenPage() {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-24">
+          <div className="space-y-12 sm:space-y-16 md:space-y-24">
             {/* Token Powers Section */}
             <div>
-              <h2 className="text-4xl  mb-2 font-museo">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl mb-2 font-museo">
                 <span className="text-white font-bold">$X</span> powers
               </h2>
-              <h3 className="text-4xl text-gray-400 mb-4 font-museo">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl text-gray-400 mb-4 font-museo">
                 the <span className="font-museo">xCombinator</span> ecosystem
               </h3>
-              <p className="text-gray-400 text-lg font-museo w-[80%]">
+              <p className="text-gray-400 text-base sm:text-lg font-museo w-full sm:w-[80%]">
                 $X isn&apos;t just a token—it&apos;s ownership in the next era of Solana products
               </p>
             </div>
 
             {/* Product Cards */}
-            <div className="relative w-2/3 mt-12 mb-12">
+            <div className="relative w-full sm:w-2/3 mt-8 sm:mt-12 mb-8 sm:mb-12">
               {/* First xApple Card */}
               <div className="relative group">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-500/20 to-red-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all">
+                <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 sm:p-6 hover:border-white/20 transition-all">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
                       <svg width="41" height="52" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -177,10 +177,10 @@ export default function SXTokenPage() {
                     </button>
                   </div>
                   <div className="flex items-center gap-2 mb-1">
-                    <h2 className="text-2xl font-bold">xApple</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold">xApple</h2>
                     <span className="px-2 py-0.5 bg-white/10 rounded-full text-xs text-gray-300">Launchpad</span>
                   </div>
-                  <p className="text-sm text-gray-400 mb-4 mt-6">
+                  <p className="text-xs sm:text-sm text-gray-400 mb-4 mt-6">
                     The coin that thinks faster than you can blink. Ride the wave of machine intelligence and memes.
                   </p>
                   <div className="flex items-center gap-2">
@@ -198,9 +198,9 @@ export default function SXTokenPage() {
               </div>
 
               {/* Second xApple Card - Overlapping */}
-              <div className="absolute top-10 left-12 group w-[100%] ">
+              <div className="hidden sm:block absolute top-6 left-6 sm:top-10 sm:left-12 group w-[100%]">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-500/20 to-red-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative bg-gradient-to-br from-gray-900/20 to-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all">
+                <div className="relative bg-gradient-to-br from-gray-900/20 to-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-4 sm:p-6 hover:border-white/20 transition-all">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3 w-[100%] h-[100%]">
                       <svg width="41" height="52" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -241,8 +241,8 @@ export default function SXTokenPage() {
             </div>
 
             {/* Deflationary Mechanism */}
-            <div className="bg-gradient-to-br from-white/5 to-white/5 backdrop-blur-md border-white/10 rounded-2xl p-8 mt-24">
-              <h3 className="text-2xl font-bold mb-4 font-museo text-gray-400">
+            <div className="bg-gradient-to-br from-white/5 to-white/5 backdrop-blur-md border-white/10 rounded-2xl p-6 sm:p-8 mt-12 sm:mt-24">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 font-museo text-gray-400">
                 <span className="font-museo">xCombinator</span> ensures a <span className="text-gray-100">deflationary supply mechanism</span> through constant buybacks
               </h3>
             </div>

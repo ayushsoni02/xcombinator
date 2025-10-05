@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 pt-20">
+      <section className="relative min-h-screen flex flex-col justify-between px-4 sm:px-6 pt-20 pb-8 sm:pb-12 md:pb-20">
         {/* Background gradient effects */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float"></div>
@@ -17,7 +17,7 @@ export default function HomePage() {
         {/* Product notification - top right */}
         <Link
           href="/products"
-          className="absolute top-32 right-12 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 flex items-center gap-3 hover:border-white/20 transition-all group cursor-pointer"
+          className="hidden lg:flex absolute top-32 right-12 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 items-center gap-3 hover:border-white/20 transition-all group cursor-pointer"
         >
           <div className="flex items-center gap-2">
             <svg width="41" height="52" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -38,8 +38,8 @@ export default function HomePage() {
         </Link>
 
         {/* Main content */}
-        <div className="relative z-10 text-center max-w-5xl">
-          <h1 className="text-7xl text-gray-400 font-bold mb-8 leading-tight font-museo">
+        <div className="relative z-10 text-center max-w-5xl mx-auto flex-1 flex flex-col justify-center mt-24">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-400 font-bold mb-6 sm:mb-8 leading-tight font-museo">
             Currently, helping people{' '}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
@@ -51,35 +51,35 @@ export default function HomePage() {
           </h1>
 
           {/* Market cap display */}
-          <div className="flex items-center justify-center gap-3 mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
             <div className="w-5 h-5 rounded-full bg-purple-500 animate-pulse"></div>
-            <span className="text-sm text-gray-400">$X Marketcap</span>
-            <span className="text-sm text-gray-600">•</span>
-            <span className="text-lg font-semibold">$7,789,567.45</span>
+            <span className="text-xs sm:text-sm text-gray-400">$X Marketcap</span>
+            <span className="text-xs sm:text-sm text-gray-600">•</span>
+            <span className="text-base sm:text-lg font-semibold">$7,789,567.45</span>
           </div>
 
           {/* CTA Button */}
           <Link
             href="/products"
-            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-full transition-all"
+            className="group relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white/5 to-white/5 hover:bg-white/10 hover:border-white/20 rounded-full transition-all lg:w-[20rem]"
           >
-            <span className="text-gray-300 group-hover:text-white transition-colors">
+            <span className="text-sm sm:text-base text-gray-300 group-hover:text-white transition-colors">
               View our suite of products
             </span>
-            <ArrowRight className="w-5 h-5 text-gray-400 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
         {/* Bottom features */}
-        <div className="absolute bottom-20 w-full max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-4 gap-6">
+        <div className="relative z-10 w-full max-w-6xl mx-auto mt-8 sm:mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {/* Feature 1 */}
-            <div className="flex items-start gap-3 group">
-              <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 flex items-center justify-center flex-shrink-0 transition-all">
-                <Eye className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+            <div className="flex items-start gap-3 group bg-black/40 backdrop-blur-sm p-4 rounded-xl sm:bg-transparent sm:backdrop-blur-none sm:p-0">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 flex items-center justify-center flex-shrink-0 transition-all">
+                <Eye className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 group-hover:text-white transition-colors" />
               </div>
               <div>
-                <div className="text-sm mb-1">
+                <div className="text-xs sm:text-sm mb-1">
                   <span className="text-white font-medium">Expert guidance</span>{' '}
                   <span className="text-gray-400">Industry leaders</span>
                 </div>
@@ -88,12 +88,12 @@ export default function HomePage() {
             </div>
 
             {/* Feature 2 */}
-            <div className="flex items-start gap-3 group">
-              <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 flex items-center justify-center flex-shrink-0 transition-all">
-                <Star className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+            <div className="flex items-start gap-3 group bg-black/40 backdrop-blur-sm p-4 rounded-xl sm:bg-transparent sm:backdrop-blur-none sm:p-0">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 flex items-center justify-center flex-shrink-0 transition-all">
+                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 group-hover:text-white transition-colors" />
               </div>
               <div>
-                <div className="text-sm mb-1">
+                <div className="text-xs sm:text-sm mb-1">
                   <span className="text-white font-medium">Full launch support</span>{' '}
                   <span className="text-gray-400">From token</span>
                 </div>
@@ -102,12 +102,12 @@ export default function HomePage() {
             </div>
 
             {/* Feature 3 */}
-            <div className="flex items-start gap-3 group">
-              <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 flex items-center justify-center flex-shrink-0 transition-all">
-                <Music className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+            <div className="flex items-start gap-3 group bg-black/40 backdrop-blur-sm p-4 rounded-xl sm:bg-transparent sm:backdrop-blur-none sm:p-0">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 flex items-center justify-center flex-shrink-0 transition-all">
+                <Music className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 group-hover:text-white transition-colors" />
               </div>
               <div>
-                <div className="text-sm mb-1">
+                <div className="text-xs sm:text-sm mb-1">
                   <span className="text-white font-medium">Solana-native</span>{' '}
                   <span className="text-gray-400">Leverage our best</span>
                 </div>
@@ -116,12 +116,12 @@ export default function HomePage() {
             </div>
 
             {/* Feature 4 */}
-            <div className="flex items-start gap-3 group">
-              <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 flex items-center justify-center flex-shrink-0 transition-all">
-                <Check className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+            <div className="flex items-start gap-3 group bg-black/40 backdrop-blur-sm p-4 rounded-xl sm:bg-transparent sm:backdrop-blur-none sm:p-0">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 flex items-center justify-center flex-shrink-0 transition-all">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 group-hover:text-white transition-colors" />
               </div>
               <div>
-                <div className="text-sm mb-1">
+                <div className="text-xs sm:text-sm mb-1">
                   <span className="text-white font-medium">Whale connections</span>{' '}
                   <span className="text-gray-400">Instant traction</span>
                 </div>
