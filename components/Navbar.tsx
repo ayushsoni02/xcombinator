@@ -29,11 +29,10 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm transition-colors ${
-                isActive(link.href)
+              className={`text-sm transition-colors ${isActive(link.href)
                   ? "text-white font-medium"
                   : "text-gray-400 hover:text-white"
-              } ${link.label === "$X" ? "font-medium" : ""}`}
+                } ${link.label === "$X" ? "font-medium" : ""}`}
             >
               {link.label}
             </Link>
