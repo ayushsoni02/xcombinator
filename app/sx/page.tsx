@@ -1,10 +1,10 @@
 "use client";
 
 import { ArrowUpRight, Twitter, Send, Globe } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 export default function SXTokenPage() {
-  const [marketCap, setMarketCap] = useState("7,789,567.45");
+  const [marketCap] = useState("7,789,567.45");
 
   return (
     <div className="min-h-screen pt-20 px-6">
@@ -150,7 +150,7 @@ export default function SXTokenPage() {
                 the <span className="font-museo">xCombinator</span> ecosystem
               </h3>
               <p className="text-gray-400 text-lg font-museo w-[80%]">
-                $X isn't just a token—it's ownership in the next era of Solana products
+                $X isn&apos;t just a token—it&apos;s ownership in the next era of Solana products
               </p>
             </div>
 

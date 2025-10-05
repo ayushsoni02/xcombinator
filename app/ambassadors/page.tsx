@@ -1,6 +1,6 @@
 "use client";
 
-import { Twitter } from "lucide-react";
+// import { Twitter } from "lucide-react";
 
 interface Ambassador {
   name: string;
