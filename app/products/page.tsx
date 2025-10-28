@@ -23,7 +23,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Product Card - xApple */}
-        {/* xApple Card */}
+     
         <div className="relative group w-full sm:w-2/3 md:w-1/2 lg:w-1/3">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-500/20 to-red-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
           <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 sm:p-6 hover:border-white/20 transition-all">
